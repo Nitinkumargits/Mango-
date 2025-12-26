@@ -10,9 +10,9 @@ const mangoVarieties = [
     seasonMonths: [3, 4, 5], // April, May, June
     pricePerDozen: 1200,
     images: [
-      'https://images.unsplash.com/photo-1605027990121-1c5b0b0b0b0b?w=800',
-      'https://images.unsplash.com/photo-1605027990122-1c5b0b0b0b0b?w=800',
-      'https://images.unsplash.com/photo-1605027990123-1c5b0b0b0b0b?w=800',
+      'https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=916&h=370&fit=crop',
+      'https://images.unsplash.com/photo-1605027990121-1c5b0b0b0b0b?w=916&h=370&fit=crop',
+      'https://images.unsplash.com/photo-1605027990122-1c5b0b0b0b0b?w=916&h=370&fit=crop',
     ],
     description: 'The King of Mangoes, Alphonso is known for its rich, creamy texture and sweet, aromatic flavor. Grown primarily in the Ratnagiri and Devgad regions of Maharashtra, this premium variety is highly sought after for its exceptional taste and golden-yellow color.',
     nutrition: {
@@ -31,8 +31,8 @@ const mangoVarieties = [
     seasonMonths: [4, 5, 6], // May, June, July
     pricePerDozen: 1000,
     images: [
-      'https://images.unsplash.com/photo-1605027990124-1c5b0b0b0b0b?w=800',
-      'https://images.unsplash.com/photo-1605027990125-1c5b0b0b0b0b?w=800',
+      'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=916&h=370&fit=crop',
+      'https://images.unsplash.com/photo-1605027990124-1c5b0b0b0b0b?w=916&h=370&fit=crop',
     ],
     description: 'Kesar mango, also known as the "Queen of Mangoes", is famous for its saffron-colored flesh and sweet, aromatic taste. Grown in the Junagadh district of Gujarat, it has a distinct flavor that makes it perfect for desserts and traditional Indian sweets.',
     nutrition: {
@@ -51,8 +51,8 @@ const mangoVarieties = [
     seasonMonths: [4, 5, 6, 7], // May, June, July, August
     pricePerDozen: 800,
     images: [
-      'https://images.unsplash.com/photo-1605027990126-1c5b0b0b0b0b?w=800',
-      'https://images.unsplash.com/photo-1605027990127-1c5b0b0b0b0b?w=800',
+      'https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=916&h=370&fit=crop',
+      'https://images.unsplash.com/photo-1605027990126-1c5b0b0b0b0b?w=916&h=370&fit=crop',
     ],
     description: 'Dasheri is one of the oldest and most popular mango varieties from Uttar Pradesh. Known for its elongated shape and fiberless, sweet flesh, Dasheri has a unique flavor profile that combines sweetness with a hint of tanginess.',
     nutrition: {
@@ -71,8 +71,8 @@ const mangoVarieties = [
     seasonMonths: [5, 6, 7], // June, July, August
     pricePerDozen: 900,
     images: [
-      'https://images.unsplash.com/photo-1605027990128-1c5b0b0b0b0b?w=800',
-      'https://images.unsplash.com/photo-1605027990129-1c5b0b0b0b0b?w=800',
+      'https://images.unsplash.com/photo-1551218808-94e220e084d2?w=916&h=370&fit=crop',
+      'https://images.unsplash.com/photo-1605027990128-1c5b0b0b0b0b?w=916&h=370&fit=crop',
     ],
     description: 'Langra mango is famous for its green skin even when ripe and its exceptionally sweet, fiberless pulp. Originating from Varanasi, this variety has a distinct taste that makes it a favorite among mango connoisseurs.',
     nutrition: {
@@ -91,8 +91,8 @@ const mangoVarieties = [
     seasonMonths: [4, 5, 6], // May, June, July
     pricePerDozen: 750,
     images: [
-      'https://images.unsplash.com/photo-1605027990130-1c5b0b0b0b0b?w=800',
-      'https://images.unsplash.com/photo-1605027990131-1c5b0b0b0b0b?w=800',
+      'https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=916&h=370&fit=crop',
+      'https://images.unsplash.com/photo-1605027990130-1c5b0b0b0b0b?w=916&h=370&fit=crop',
     ],
     description: 'Banganapalli, also known as Benishan, is a large, oval-shaped mango variety from Andhra Pradesh. It has a thin skin, minimal fiber, and a sweet, mild flavor that makes it perfect for eating fresh or in salads.',
     nutrition: {
@@ -111,8 +111,8 @@ const mangoVarieties = [
     seasonMonths: [5, 6, 7, 8], // June, July, August, September
     pricePerDozen: 600,
     images: [
-      'https://images.unsplash.com/photo-1605027990132-1c5b0b0b0b0b?w=800',
-      'https://images.unsplash.com/photo-1605027990133-1c5b0b0b0b0b?w=800',
+      'https://images.unsplash.com/photo-1528607929212-2636ec44253e?w=916&h=370&fit=crop',
+      'https://images.unsplash.com/photo-1605027990132-1c5b0b0b0b0b?w=916&h=370&fit=crop',
     ],
     description: 'Totapuri, named for its parrot-beak shape, is known for its tangy flavor and firm texture. This variety is excellent for making pickles, chutneys, and juices. It has a longer shelf life compared to other varieties.',
     nutrition: {
