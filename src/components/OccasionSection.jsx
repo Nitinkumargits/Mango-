@@ -66,7 +66,6 @@ const OccasionSection = () => {
           }}
           loop={occasions.length > 1}
           loopAdditionalSlides={occasions.length > 2 ? 2 : occasions.length}
-          loopedSlides={Math.max(occasions.length, 2)}
           watchSlidesProgress={true}
           loopPreventsSliding={false}
           speed={600}
