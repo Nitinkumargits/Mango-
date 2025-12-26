@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom';
 import { format } from 'date-fns';
 import HeroSection from '../components/HeroSection';
+import OccasionSection from '../components/OccasionSection';
+import DailyBoostSection from '../components/DailyBoostSection';
 import FanFavoritesSection from '../components/FanFavoritesSection';
 import Button from '../components/Button';
 import LoadingSpinner from '../components/LoadingSpinner';
@@ -45,6 +47,13 @@ const HomePage = () => {
   return (
     <div>
       <HeroSection />
+      
+      {/* Mangos Go With Every Occasion Section */}
+      <OccasionSection />
+      
+      {/* Daily Boost Section */}
+      <DailyBoostSection />
+      
       <div className="max-w-7xl mx-auto px-4 py-12">
         <SeasonalBanner />
       </div>
