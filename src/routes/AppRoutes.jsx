@@ -9,6 +9,7 @@ import BlogPage from '../pages/BlogPage';
 import BlogPostDetailPage from '../pages/BlogPostDetailPage';
 import AboutPage from '../pages/AboutPage';
 import ContactPage from '../pages/ContactPage';
+import MangoNutritionPage from '../pages/MangoNutritionPage';
 
 const AppRoutes = () => {
   return (
@@ -23,6 +24,7 @@ const AppRoutes = () => {
       <Route path="/blog" element={<BlogPage />} />
       <Route path="/blog/:id" element={<BlogPostDetailPage />} />
       <Route path="/about" element={<AboutPage />} />
+      <Route path="/mango-nutrition" element={<MangoNutritionPage />} />
       <Route path="/contact" element={<ContactPage formType="general" />} />
       <Route path="/contact/general" element={<ContactPage formType="general" />} />
       <Route path="/contact/distributors" element={<ContactPage formType="distributors" />} />
