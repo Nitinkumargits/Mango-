@@ -1,17 +1,8 @@
 import { Link } from 'react-router-dom';
 import { formatSeasonMonths, getSeasonStatus } from '../utils/dateUtils';
-import { FaHeart } from 'react-icons/fa';
-import { useState } from 'react';
 
 const MangoCard = ({ mango }) => {
   const seasonStatus = getSeasonStatus(mango.seasonMonths);
-  const [isFavorite, setIsFavorite] = useState(false);
-
-  const handleFavoriteClick = (e) => {
-    e.preventDefault();
-    e.stopPropagation();
-    setIsFavorite(!isFavorite);
-  };
 
   return (
     <div className="card border-0 h-100 w-full flex flex-col">
@@ -32,18 +23,6 @@ const MangoCard = ({ mango }) => {
             <span className="text-6xl">🥭</span>
           </div>
         )}
-        <button
-          onClick={handleFavoriteClick}
-          className="absolute top-0 right-0 bg-transparent border-0 py-8 px-12 cursor-pointer z-10"
-          aria-label="Like This Mango"
-        >
-          <FaHeart
-            className={`text-3xl transition-colors ${
-              isFavorite ? 'text-red-500 fill-red-500' : 'text-white'
-            }`}
-            style={{ width: '60px', height: '56px' }}
-          />
-        </button>
       </div>
 
       {/* Card Body */}
