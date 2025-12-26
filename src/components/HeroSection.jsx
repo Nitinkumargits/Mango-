@@ -86,9 +86,6 @@ const HeroSection = () => {
                     <div className="hero-overlay"></div>
                   </div>
                   <Link to={slide.link} className="hero-slide-link" aria-label={slide.name}>
-                    <div className="hero-content">
-                      <h2 className="hero-title">{slide.name}</h2>
-                    </div>
                   </Link>
                 </div>
               </SwiperSlide>
@@ -160,9 +157,6 @@ const HeroSection = () => {
                     <div className="hero-overlay"></div>
                   </div>
                   <Link to={slide.link} className="hero-slide-link" aria-label={slide.name}>
-                    <div className="hero-content">
-                      <h2 className="hero-title">{slide.name}</h2>
-                    </div>
                   </Link>
                 </div>
               </SwiperSlide>
