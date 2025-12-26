@@ -5,6 +5,7 @@ import { Toaster } from 'react-hot-toast';
 import AppRoutes from './routes/AppRoutes';
 import ErrorFallback from './components/ErrorFallback';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 
 // Create a query client
 const queryClient = new QueryClient({
@@ -22,9 +23,12 @@ function App() {
     <QueryClientProvider client={queryClient}>
       <BrowserRouter>
         <ErrorBoundary FallbackComponent={ErrorFallback}>
-          <div className="min-h-screen bg-gray-50">
+          <div className="min-h-screen bg-gray-50 flex flex-col">
             <Navbar />
-            <AppRoutes />
+            <div className="flex-grow">
+              <AppRoutes />
+            </div>
+            <Footer />
             <Toaster
               position="top-right"
               toastOptions={{

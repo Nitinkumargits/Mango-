@@ -6,6 +6,7 @@ import DashboardPage from '../pages/DashboardPage';
 import ProductsPage from '../pages/ProductsPage';
 import IngredientsPage from '../pages/IngredientsPage';
 import BlogPage from '../pages/BlogPage';
+import BlogPostDetailPage from '../pages/BlogPostDetailPage';
 import AboutPage from '../pages/AboutPage';
 import ContactPage from '../pages/ContactPage';
 
@@ -20,6 +21,7 @@ const AppRoutes = () => {
       <Route path="/products/confectionary" element={<ProductsPage category="confectionary" />} />
       <Route path="/ingredients" element={<IngredientsPage />} />
       <Route path="/blog" element={<BlogPage />} />
+      <Route path="/blog/:id" element={<BlogPostDetailPage />} />
       <Route path="/about" element={<AboutPage />} />
       <Route path="/contact" element={<ContactPage formType="general" />} />
       <Route path="/contact/general" element={<ContactPage formType="general" />} />

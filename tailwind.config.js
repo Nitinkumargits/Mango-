@@ -24,6 +24,9 @@ export default {
         'slide-up': 'slideUp 0.5s ease-out',
         'bounce-slow': 'bounce 2s infinite',
       },
+      backgroundImage: {
+        'gradient-fan-favorites': 'linear-gradient(to bottom, #FFC107, #FF9800, #F44336)',
+      },
       keyframes: {
         fadeIn: {
           '0%': { opacity: '0' },

@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { format } from 'date-fns';
 import HeroSection from '../components/HeroSection';
-import MangoCard from '../components/MangoCard';
+import FanFavoritesSection from '../components/FanFavoritesSection';
 import Button from '../components/Button';
 import LoadingSpinner from '../components/LoadingSpinner';
 import useMangoes from '../hooks/useMangoes';
@@ -40,36 +40,6 @@ const SeasonalBanner = () => {
   );
 };
 
-const FeaturedMangoes = () => {
-  const { data: mangoes, isLoading, error } = useMangoes();
-  
-  if (isLoading) {
-    return <LoadingSpinner size="lg" />;
-  }
-  
-  if (error) {
-    return (
-      <div className="text-center py-12">
-        <p className="text-red-600">Failed to load mangoes. Please try again later.</p>
-      </div>
-    );
-  }
-  
-  // Show first 4 mangoes as featured
-  const featuredMangoes = mangoes?.slice(0, 4) || [];
-  
-  if (featuredMangoes.length === 0) {
-    return null;
-  }
-  
-  return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-      {featuredMangoes.map((mango) => (
-        <MangoCard key={mango.id} mango={mango} />
-      ))}
-    </div>
-  );
-};
 
 const HomePage = () => {
   return (
@@ -77,17 +47,12 @@ const HomePage = () => {
       <HeroSection />
       <div className="max-w-7xl mx-auto px-4 py-12">
         <SeasonalBanner />
-        
-        <div className="mb-12">
-          <div className="flex items-center justify-between mb-6">
-            <h2 className="text-3xl font-bold text-gray-800">Featured Mangoes</h2>
-            <Link to="/mangoes">
-              <Button variant="outline">View All</Button>
-            </Link>
-          </div>
-          <FeaturedMangoes />
-        </div>
-        
+      </div>
+      
+      {/* Fan Favorites Section with Carousel - Full Width */}
+      <FanFavoritesSection />
+      
+      <div className="max-w-7xl mx-auto px-4 py-12">
         <div className="bg-white rounded-xl shadow-lg p-8 text-center">
           <h2 className="text-3xl font-bold text-gray-800 mb-4">
             Experience the Taste of Premium Mangoes

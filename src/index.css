@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Swiper CSS */
+@import 'swiper/css';
+@import 'swiper/css/navigation';
+@import 'swiper/css/pagination';
+@import 'swiper/css/autoplay';
+
 @layer base {
   body {
     @apply bg-gray-50 text-gray-900;
@@ -20,4 +26,97 @@
   .card {
     @apply bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden;
   }
+  
+  .prose {
+    @apply text-gray-700;
+  }
+  
+  .prose h2 {
+    @apply text-2xl font-bold text-gray-800 mt-8 mb-4;
+  }
+  
+  .prose h3 {
+    @apply text-xl font-semibold text-gray-800 mt-6 mb-3;
+  }
+  
+  .prose p {
+    @apply mb-4 leading-relaxed;
+  }
+  
+  .prose ul {
+    @apply list-disc list-inside mb-4 space-y-2;
+  }
+  
+  .prose li {
+    @apply ml-4;
+  }
+  
+  .prose strong {
+    @apply font-semibold text-gray-800;
+  }
+  
+  .prose a {
+    @apply text-mango-orange hover:underline;
+  }
+}
+
+/* Swiper Custom Styles */
+.swiper-button-next,
+.swiper-button-prev {
+  display: none !important;
+}
+
+.swiper {
+  padding-bottom: 0 !important;
+}
+
+.swiper-wrapper {
+  display: flex !important;
+  flex-direction: row !important;
+}
+
+.swiper-slide {
+  display: flex !important;
+  flex-shrink: 0 !important;
+  height: auto !important;
+  align-items: stretch !important;
+  width: auto !important;
+  justify-content: center !important;
+}
+
+.swiper-slide > * {
+  width: 100%;
+  height: 100%;
+}
+
+/* Ensure cards have consistent width and spacing in carousel */
+.fan-favorites-carousel .swiper-slide {
+  width: 300px !important;
+  height: auto !important;
+  flex-shrink: 0 !important;
+}
+
+@media (min-width: 640px) {
+  .fan-favorites-carousel .swiper-slide {
+    width: 300px !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  .fan-favorites-carousel .swiper-slide {
+    width: 300px !important;
+  }
+}
+
+@media (min-width: 1280px) {
+  .fan-favorites-carousel .swiper-slide {
+    width: 300px !important;
+  }
+}
+
+.fan-favorites-carousel .swiper-slide .card {
+  width: 100% !important;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
 }
