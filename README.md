@@ -1,4 +1,4 @@
-# Mango E-commerce Website
+# Mango E-commerce Website 🥭
 
 A modern, responsive e-commerce website for premium mango varieties built with React and Vite.
 
